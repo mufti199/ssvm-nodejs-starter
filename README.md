@@ -1,3 +1,7 @@
+# My Version
+Takes the username through curl and prints a nice greeting for them.
+
+
 # Getting started
 
 ![Build and test](https://github.com/second-state/ssvm-nodejs-starter/workflows/Build%20and%20test/badge.svg)
