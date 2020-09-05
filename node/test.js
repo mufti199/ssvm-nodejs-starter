@@ -1,2 +1,2 @@
-const { say } = require("../pkg/ssvm_nodejs_starter_lib.js.js.js");
-console.log(say("Node.js"));
+const { quotes } = require("../pkg/ssvm_quotes_lib.js");
+console.log(quotes("Node.js"));
