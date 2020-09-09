@@ -2,7 +2,7 @@
 
 The app uses a rust function to generate a randomized quote.
 
-## Current issues
+## Previously faced issues
 
 wasm-bindgen does not support lifetime specifiers ( &'static ). There is already an open issue [here](https://github.com/rustwasm/wasm-bindgen/issues/1187).\
 Will change rust function to work around, soon.
@@ -19,13 +19,6 @@ If you have not done so already, follow these simple instructions to [install Ru
 $ ssvmup build
 ```
 
-## Test
-
-```
-$ cd node
-$ node test.js
-```
-
 ## Web app
 
 ```
@@ -35,3 +28,6 @@ Listening at http://localhost:8080
 ```
 
 Then point your browser to `http://hostname:8080` and click on the generate button to recieve a new quote.
+
+<img src="./images/1.png" width=70%>
+<img src="./images/2.png" width=70%>
