@@ -2,7 +2,7 @@ use wasm_bindgen::prelude::*;
 use rand::Rng;
 
 #[wasm_bindgen]
-pub fn quotes() -> (&'static str, &'static str) {
+pub fn quotes() -> String {
   println!("You've asked for a quote!");
   
   let quotes = vec![("The universe is change; our life is what our thoughts make it.", "Marcus Aurelius"),
@@ -14,5 +14,5 @@ pub fn quotes() -> (&'static str, &'static str) {
  
   let rng = rand::thread_rng().gen_range(0,6);
 
-  return quotes[rng];
+  return serde_json::to_string(&quotes[rng]).unwrap();
 }
